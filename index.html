@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Tips | Stock Market Advice | Stock Market Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .wh-100 {
+            width: 100px;
+            height: 100px;
+        }
+
+        .boxr1 {
+            border-radius: 1rem;
+        }
+
+        .black {
+            background-color: #007bff;
+        }
+
+        .bg-c {
+            background: #2e3c56;
+        }
+
+        .hero-section {
+            /* background-image: url('./Trade1.png'); */
+            background-size: cover;
+            /* background-position: center; */
+            /* height: 50vh; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section .hero-text {
+            margin-bottom: 20px;
+        }
+
+        .boxes-section {
+            padding: 40px 0;
+            background-color: #f8f9fa;
+        }
+
+        .box {
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            background-color: white;
+            text-align: center;
+        }
+
+        .icon-box {
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            background-color: white;
+            text-align: center;
+            min-height: 300px;
+            border-radius: 1rem;
+        }
+
+        .icon-box i {
+            font-size: 50px;
+            margin-bottom: 10px;
+
+        }
+
+        .i {
+            font-size: 50px;
+            margin-bottom: 10px;
+
+        }
+
+        .border-b {
+            border-bottom: 1px solid aliceblue;
+        }
+
+        /* prizing css */
+
+        /* section.pricing {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+} */
+
+        .pricing .card {
+            border: 1px solid #007bff;
+            border-radius: 1rem;
+            transition: all 0.2s;
+            box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing hr {
+            margin: 1.5rem 0;
+        }
+
+        .pricing .card-title {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+        }
+
+        .pricing .card-price {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .pricing .card-price .period {
+            font-size: 0.8rem;
+        }
+
+        .pricing ul li {
+            margin-bottom: 1rem;
+        }
+
+        .pricing .text-muted {
+            opacity: 0.7;
+        }
+
+        .pricing .btn {
+            font-size: 80%;
+            border-radius: 5rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+            padding: 1rem;
+            opacity: 0.7;
+            transition: all 0.2s;
+        }
+
+        /* Hover Effects on Card */
+
+        @media (min-width: 992px) {
+            .pricing .card:hover {
+                margin-top: -.25rem;
+                margin-bottom: .25rem;
+                box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+            }
+
+            .pricing .card:hover .btn {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow  border-b sticky-top p-3">
+        <div class="container">
+            <a class="navbar-brand " href="#"><span class="fs-1 fw-bold text-primary px-2"><i
+                        class="bi bi-graph-up-arrow"></i></span><span
+                    class="fs-1 fw-bold text-primary">Astro</span><span
+                    class="fs-1 fw-bold text-success">Market</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-sm-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-6 fst-normal" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-6 fst-normal" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-6 fst-normal" href="#service">Service</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-6 fst-normal" href="#pricing">Pricing</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-6 fst-normal" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Boxes Section -->
+    <section id="home " class="bg-c">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-6 d-flex align-items-center">
+
+                    <div class="hero-text fs-1 fw-bold text-white">
+                        Our <span class="text-success">investment</span> platform <br>offers a <span
+                            class="text-success">wealth</span>of features.
+                    </div>
+                </div>
+                <div class=" hero-section col-md-6">
+                    <div class="p-3 text-center">
+                        <img src="./img.png" class="w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="container">
+            <div class="row py-3">
+                <div class="fs-1 d-flex justify-content-center text-center">About Us</div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <div class="p-3 text-center">
+                        <p>AstroMarket stands out as a premier trading and investment platform, recognized for its
+                            unwavering commitment to excellence. Our reputation is built on delivering high-quality
+                            stock selections and offering the best options for intraday trading. By leveraging
+                            cutting-edge technology and in-depth market analysis, we ensure that our clients have access
+                            to the most lucrative investment opportunities. Our team of experienced professionals works
+                            tirelessly to provide insights and strategies that empower traders to make informed
+                            decisions and achieve their financial goals.</p>
+                        <p>
+                            In addition to our robust trading services, AstroMarket safeguards your financial assets and
+                            provides comprehensive wealth management services. We understand that managing wealth
+                            involves more than just trading; it requires a holistic approach to financial planning. Our
+                            wealth management solutions are tailored to meet the unique needs of each client,
+                            encompassing everything from portfolio diversification and risk management to retirement
+                            planning and estate management. With AstroMarket, you can trust that your financial future
+                            is in capable hands, supported by a dedicated team committed to your long-term success</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Boxes Section -->
+    <section id="service">
+        <div class="container">
+            <div class="row py-3">
+                <div class="fs-1 d-flex justify-content-center text-center">Make a choice for Investment Services</div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="icon-box border border-primary bg-primary text-white">
+                        <div class="card-top d-flex justify-content-center ">
+                            <div class="card-icon fs-1">
+                                <div class="d-flex justify-content-center rounded-circle wh-100 align-items-center">
+                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h2>Stocks</h2>
+                        <p> We specialize in providing top-notch stock investment services. Our commitment is to ensure
+                            the best outcomes for our investors.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box border border-primary bg-primary text-white">
+                        <div class="card-top d-flex justify-content-center ">
+                            <div class="card-icon fs-1">
+                                <div class="d-flex justify-content-center rounded-circle wh-100 align-items-center">
+                                    <i class="bi bi-pie-chart-fill"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h2>ETFs</h2>
+                        <p> Our premier service focuses on investment in ETFs, providing clients with exceptional
+                            opportunities for growth and diversification.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box border border-primary bg-primary text-white">
+                        <div class="card-top d-flex justify-content-center ">
+                            <div class="card-icon fs-1">
+                                <div
+                                    class="d-flex justify-content-center p-4 m-2 rounded-circle wh-100 align-items-center">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h2>F&O</h2>
+                        <p> Engaging in Futures and Options trading provides investors with opportunities to manage risk
+                            and leverage their positions.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icon-box border border-primary bg-primary text-white">
+                        <div class="card-top d-flex justify-content-center ">
+                            <div class="card-icon fs-1">
+                                <div
+                                    class="d-flex justify-content-center p-4 m-2 rounded-circle wh-100 align-items-center">
+                                    <i class="bi bi-cash-coin"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <h2>Wealth</h2>
+                        <p>A wealth management system process integrates multiple components to ensure comprehensive
+                            financial planning and management</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icon-box border border-primary bg-primary text-white">
+                        <div class="card-top d-flex justify-content-center ">
+                            <div class="card-icon fs-1">
+                                <div
+                                    class="d-flex justify-content-center p-4 m-2 rounded-circle wh-100 align-items-center">
+                                    <i class="bi bi-arrow-up-right-circle-fill"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h2>IPOs</h2>
+                        <p>We assist companies in navigating the IPO application process. Our expertise ensures a smooth
+                            transition to becoming a publicly traded entity</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box border border-primary bg-primary text-white">
+                        <div class="card-top d-flex justify-content-center ">
+                            <div class="card-icon fs-1">
+                                <div
+                                    class="d-flex justify-content-center p-4 m-2 rounded-circle wh-100 align-items-center">
+                                    <i class="bi bi-graph-up"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <h2>Mutual Funds</h2>
+                        <p> Explore our carefully curated list of Mutual Funds designed to offer safety and stability
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- prizing Section -->
+    <section id="pricing" class="pricing py-5">
+        <div class="container">
+            <div class="row">
+                <div class="fs-1 d-flex justify-content-center text-center py-5">Pricing to make your Work Effective
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- Free Tier -->
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Starter</h5>
+                            <h6 class="card-price text-center">RS. 25,000<span class="period">/month</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Investment Rs.50,000</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Stocks for Long terms</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Stocks for Short terms</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Equity Positions</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>F&O Positions</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Intraday Trading</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Commodity Trading</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Mutual Funds</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Return 200%</li>
+
+
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary text-uppercase">Buy <i class="bi bi-cart4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plus Tier -->
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                            <h6 class="card-price text-center">RS. 50,000<span class="period">/month</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Investment Rs.1,00,000</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Stocks for Long terms</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Stocks for Short terms</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Equity Positions</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>F&O Positions</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Intraday Trading</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Commodity Trading</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Mutual Funds</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Return 200%</li>
+
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary text-uppercase">Buy <i class="bi bi-cart4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pro Tier -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+                            <h6 class="card-price text-center">RS. 1,00,000<span class="period">/month</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Investment Rs.2,00,000</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Stocks for Long terms</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Stocks for Short terms</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Equity Positions</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>F&O Positions</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Intraday Trading</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Commodity Trading</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Mutual Funds</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Return 200%</li>
+
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary text-uppercase ">Buy <i class="bi bi-cart4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Boxes Section -->
+    <section id="contact" class="py-3 bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="fs-1 d-flex justify-content-center text-center">Contact Us</div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="shadow p-3 boxr1 bg-white">
+                        <div class="fs-4 fw-medium py-3">
+                            Reach Us!
+                        </div>
+                        <div>
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="+91 90119 01190">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput2"
+                                        placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Your Comments</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary w-75">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="shadow p-3 boxr1 h-100 bg-white">
+                        <div class="py-3">
+                            <div class="fs-4 fw-medium">Phone Number</div>
+                            <div>+91 88837 57803</div>
+                        </div>
+                        <div class="py-3">
+                            <div class="fs-4 fw-medium">E-Mail Address</div>
+                            <div>astrosupport@astromarket.in</div>
+                        </div>
+                        <div class="py-3">
+                            <div class="fs-4 fw-medium mb-2">Registered Office Address</div>
+
+                            <P> 5th Lane ,<br> Brindavan Gardens , <br>7th B , 7th Main Road ,<br> Guntur,<br> Andra
+                                Pradesh- 522006</P>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Boxes Section -->
+    <section class="py-3 bg-c text-light">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <div class="p-3 text-center">
+                        © COPYRIGHT 2024 ASTRO FINACE - ALL RIGHTS RESERVED.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Us Section -->
+
+
+    <!-- Contacts Section -->
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
